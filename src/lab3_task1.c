@@ -41,34 +41,34 @@ int array_sum(int arr[], int size);
 float array_avg(int arr[], int size);
 
 int main(void) {
-    int arr[] = {10, 20, 5, 30, 15};
-    int size = 5;
+  int arr[] = {10, 20, 5, 30, 15};
+  int size = 5;
 
-    printf("Min: %d\n", array_min(arr, size));
-    printf("Max: %d\n", array_max(arr, size));
-    printf("Sum: %d\n", array_sum(arr, size));
-    printf("Avg: %.2f\n", array_avg(arr, size));
+  printf("Min: %d\n", array_min(arr, size));
+  printf("Max: %d\n", array_max(arr, size));
+  printf("Sum: %d\n", array_sum(arr, size));
+  printf("Avg: %.2f\n", array_avg(arr, size));
 
-    return 0;
+  return 0;
 }
 
 // Implement functions below
 int array_min(int arr[], int size) {
-    // TODO: return smallest element
-    return 0; // placeholder
+  // TODO: return smallest element
+  return 0;  // placeholder
 }
 
 int array_max(int arr[], int size) {
-    // TODO: return largest element
-    return 0; // placeholder
+  // TODO: return largest element
+  return 0;  // placeholder
 }
 
 int array_sum(int arr[], int size) {
-    // TODO: return sum of elements
-    return 0; // placeholder
+  // TODO: return sum of elements
+  return 0;  // placeholder
 }
 
 float array_avg(int arr[], int size) {
-    // TODO: return average as float (avoid integer division)
-    return 0.0f; // placeholder
+  // TODO: return average as float (avoid integer division)
+  return 0.0f;  // placeholder
 }

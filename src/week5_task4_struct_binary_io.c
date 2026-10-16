@@ -13,10 +13,6 @@ typedef struct Student {
   float gpa;
 } Student;
 
-/*
-Saves one student structure in binary format.
-Returns 0 on success and -1 on error.
-*/
 int save_student_binary(const Student* s, const char* filename) {
   FILE* fp = fopen(filename, "wb");
 
@@ -36,10 +32,6 @@ int save_student_binary(const Student* s, const char* filename) {
   return 0;
 }
 
-/*
-Loads one student structure from a binary file.
-Returns 0 on success and -1 on error.
-*/
 int load_student_binary(const char* filename, Student* out) {
   FILE* fp = fopen(filename, "rb");
 
@@ -59,10 +51,6 @@ int load_student_binary(const char* filename, Student* out) {
   return 0;
 }
 
-/*
-Returns the file size in bytes.
-Returns -1 if an error occurs.
-*/
 long file_size(const char* filename) {
   FILE* fp = fopen(filename, "rb");
   long size;
@@ -90,9 +78,6 @@ long file_size(const char* filename) {
   return size;
 }
 
-/*
-Saves the same student record in text format.
-*/
 int save_student_text(const Student* s, const char* filename) {
   FILE* fp = fopen(filename, "w");
 
